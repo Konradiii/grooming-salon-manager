@@ -1,0 +1,64 @@
+:root {
+  --text: #4b4550;
+  --text-h: #1a1720;
+  --bg: #faf9fb;
+  --surface: #ffffff;
+  --border: #e5e4e7;
+  --accent: #8b5cf6;
+  --accent-dark: #7c3aed;
+  --accent-bg: rgba(139, 92, 246, 0.1);
+  --danger: #e0524a;
+  --danger-bg: rgba(224, 82, 74, 0.1);
+  --shadow: rgba(20, 12, 33, 0.08) 0 4px 16px -4px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 16px/1.5 var(--sans);
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #c7c3cc;
+    --text-h: #f3f1f7;
+    --bg: #17151c;
+    --surface: #1f1c26;
+    --border: #322e3b;
+    --accent: #a78bfa;
+    --accent-dark: #c4b5fd;
+    --accent-bg: rgba(167, 139, 250, 0.15);
+    --danger: #f28b85;
+    --danger-bg: rgba(242, 139, 133, 0.15);
+    --shadow: rgba(0, 0, 0, 0.4) 0 4px 16px -4px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+button, input, select, textarea {
+  font: inherit;
+  color: inherit;
+}
