@@ -8,13 +8,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 
-Console.WriteLine("=== DEBUG: environment variables ===");
-foreach (System.Collections.DictionaryEntry e in Environment.GetEnvironmentVariables())
-{
-    var key = e.Key?.ToString() ?? "";
-    Console.WriteLine($"{key} = {e.Value}");
-}
-Console.WriteLine("=== END DEBUG ===");
+
 
 if (args.Length == 2 && args[0] == "--generate-hash")
 {
